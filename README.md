@@ -38,7 +38,7 @@ This service uses virtualenv. To run the service and tests, perform the followin
 ```
 {
   "first_name": "John",
-  "last_name": "Does",
+  "last_name": "Doe",
   "dob": 2008-04-19
 }
 ```
