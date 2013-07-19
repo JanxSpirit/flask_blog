@@ -28,23 +28,23 @@ This service uses virtualenv. To run the service and tests, perform the followin
 
 ## Data structures:
 ### Post
-`{
+```{
   "title": "A Post Title",
   "author": "validusername",
   "content": "The content of the blog post."
-}`
+}```
 
 ### Author
-`{
+```{
   "first_name": "John",
   "last_name": "Does",
   "dob": 2008-04-19
-}`
+}```
 
 ## Example usage (using httpie)
 
 ###### Create an author:
-`http PUT 127.0.0.1:5000/authors/jdoe first_name='John' last_name='Doe' dob='2008-04-19'
+```http PUT 127.0.0.1:5000/authors/jdoe first_name='John' last_name='Doe' dob='2008-04-19'
 HTTP/1.0 201 CREATED
 Content-Length: 105
 Content-Type: application/json
@@ -57,10 +57,10 @@ Server: Werkzeug/0.9.1 Python/2.7.3
     "last_name": "Doe", 
     "username": "jdoe"
 }
-`
+```
 
 ###### Create a post:
-`http POST 127.0.0.1:5000/posts title='Test Post' author='jdoe' content='Blog Post Content'      
+```http POST 127.0.0.1:5000/posts title='Test Post' author='jdoe' content='Blog Post Content'      
 HTTP/1.0 201 CREATED
 Content-Length: 140
 Content-Type: application/json
@@ -73,10 +73,10 @@ Server: Werkzeug/0.9.1 Python/2.7.3
     "id": "3e7b8d4e-f077-11e2-83e3-00216b2a9376", 
     "title": "Test Post"
 }
-`
+```
 
 ###### List all posts:
-`http GET 127.0.0.1:5000/posts
+```http GET 127.0.0.1:5000/posts
 HTTP/1.0 200 OK
 Content-Length: 168
 Content-Type: application/json
@@ -91,10 +91,10 @@ Server: Werkzeug/0.9.1 Python/2.7.3
         "title": "Test Post"
     }
 ]
-`
+```
 
 ###### List all authors:
-`http GET 127.0.0.1:5000/authors
+```http GET 127.0.0.1:5000/authors
 HTTP/1.0 200 OK
 Content-Length: 273
 Content-Type: application/json
@@ -109,4 +109,4 @@ Server: Werkzeug/0.9.1 Python/2.7.3
         "username": "jdoe"
     }
 ]
-`
+```
