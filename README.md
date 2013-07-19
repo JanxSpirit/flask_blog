@@ -52,6 +52,7 @@ HTTP/1.0 201 CREATED
 Content-Length: 105
 Content-Type: application/json
 Date: Fri, 19 Jul 2013 13:27:02 GMT
+Location: http://127.0.0.1:5000/authors/jdoe
 Server: Werkzeug/0.9.1 Python/2.7.3
 
 {
@@ -69,6 +70,7 @@ HTTP/1.0 201 CREATED
 Content-Length: 140
 Content-Type: application/json
 Date: Fri, 19 Jul 2013 13:29:31 GMT
+Location: http://127.0.0.1:5000/posts/3e7b8d4e-f077-11e2-83e3-00216b2a9376
 Server: Werkzeug/0.9.1 Python/2.7.3
 
 {
