@@ -16,13 +16,13 @@ This service uses virtualenv. To run the service and tests, perform the followin
 ### /posts
 ###### GET - get a list of all posts
 ###### POST - add a new blog post
-### /posts/<post-id>
+### /posts/post-id
 ###### GET - get details of a blog post
 ###### PUT - update details of a blog post
 ###### DELETE - delete a blog post
 ### /authors
 ###### GET - get a list of all authors
-### /authors/<username>
+### /authors/username
 ###### GET - get the details of an author
 ###### PUT - create or update an author with the given username
 
