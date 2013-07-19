@@ -14,17 +14,17 @@ This service uses virtualenv. To run the service and tests, perform the followin
 ## Resources:
 
 ### /posts
-#### GET - get a list of all posts
-#### POST - add a new blog post
+###### GET - get a list of all posts
+###### POST - add a new blog post
 ### /posts/<post-id>
-#### GET - get details of a blog post
-#### PUT - update details of a blog post
-#### DELETE - delete a blog post
+###### GET - get details of a blog post
+###### PUT - update details of a blog post
+###### DELETE - delete a blog post
 ### /authors
-#### GET - get a list of all authors
+###### GET - get a list of all authors
 ### /authors/<username>
-#### GET - get the details of an author
-#### PUT - create or update an author with the given username
+###### GET - get the details of an author
+###### PUT - create or update an author with the given username
 
 ## Data structures:
 ### Post
